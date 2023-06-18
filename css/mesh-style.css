@@ -23,3 +23,9 @@ body {
 	font-size: 0;
 	overflow: hidden;
 }
+
+.canvas {
+	z-index: 1;
+	position: absolute;
+	pointer-events: none;
+}

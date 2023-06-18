@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 37.0, 112.0, 1444.0, 854.0 ],
+		"rect" : [ 36.0, 81.0, 1442.0, 1057.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,65 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "dict.view",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "live.text",
+					"mode" : 0,
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 840.0, 240.0, 194.0 ],
-					"varname" : "mydictview[2]"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 689.999998509883881, 71.0, 130.0, 26.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Load Image",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 689.999998509883881, 137.0, 137.0, 22.0 ],
+					"text" : "conformpath native boot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 689.999998509883881, 105.0, 130.0, 22.0 ],
+					"text" : "opendialog .JPG .PNG"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-78",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 689.999998509883881, 167.0, 81.0, 22.0 ],
+					"text" : "set_image $1"
 				}
 
 			}
@@ -55,7 +108,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 125.5, 808.0, 91.0, 22.0 ],
+					"patching_rect" : [ 105.0, 829.0, 91.0, 22.0 ],
 					"text" : "s mediadevices"
 				}
 
@@ -66,7 +119,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.0, 808.0, 32.0, 22.0 ],
+					"patching_rect" : [ 172.0, 800.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -98,11 +151,11 @@
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 38.0, 769.0, 207.0, 22.0 ],
-					"text" : "route dictionary update mediadevices"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 38.0, 769.0, 153.0, 22.0 ],
+					"text" : "route update mediadevices"
 				}
 
 			}
@@ -276,7 +329,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 689.499998509883881, 169.0, 115.0, 22.0 ],
+					"patching_rect" : [ 444.0, 167.0, 115.0, 22.0 ],
 					"text" : "set_mediadevice $1"
 				}
 
@@ -446,7 +499,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 689.999998509883881, 107.0, 83.0, 22.0 ],
+					"patching_rect" : [ 444.5, 105.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -465,7 +518,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 779.499998509883881, 107.0, 89.0, 22.0 ],
+					"patching_rect" : [ 534.0, 105.0, 89.0, 22.0 ],
 					"text" : "r mediadevices"
 				}
 
@@ -473,13 +526,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"items" : [ "Logitech BRIO (046d:085e)", ",", "FaceTime HD Camera" ],
+					"items" : "Logitech BRIO (046d:085e)",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 689.499998509883881, 135.0, 234.0, 22.0 ]
+					"patching_rect" : [ 444.0, 133.0, 228.0, 22.0 ]
 				}
 
 			}
@@ -490,7 +543,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 818.499998509883881, 169.0, 105.0, 22.0 ],
+					"patching_rect" : [ 567.0, 167.0, 105.0, 22.0 ],
 					"text" : "get_mediadevices"
 				}
 
@@ -677,7 +730,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 484.0, 97.0, 70.0, 22.0 ],
+					"patching_rect" : [ 855.185796098111837, 97.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -690,7 +743,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 582.0, 137.0, 24.0, 24.0 ]
+					"patching_rect" : [ 953.185796098111837, 137.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -701,7 +754,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 582.0, 167.0, 81.0, 22.0 ],
+					"patching_rect" : [ 953.185796098111837, 167.0, 81.0, 22.0 ],
 					"text" : "draw_face $1"
 				}
 
@@ -714,7 +767,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 484.0, 137.0, 24.0, 24.0 ]
+					"patching_rect" : [ 855.185796098111837, 137.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -725,7 +778,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 484.0, 167.0, 91.0, 22.0 ],
+					"patching_rect" : [ 855.185796098111837, 167.0, 91.0, 22.0 ],
 					"text" : "draw_image $1"
 				}
 
@@ -736,7 +789,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 274.0, 143.0, 163.0, 20.0 ],
+					"patching_rect" : [ 271.0, 143.0, 163.0, 20.0 ],
 					"text" : "set to 1 for GPU acceleration"
 				}
 
@@ -748,7 +801,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 143.0, 70.0, 22.0 ],
+					"patching_rect" : [ 199.0, 143.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -786,7 +839,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 202.0, 167.0, 235.0, 22.0 ]
+					"patching_rect" : [ 199.0, 167.0, 235.0, 22.0 ]
 				}
 
 			}
@@ -3710,28 +3763,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-11", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-11", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-11", 3 ]
+					"source" : [ "obj-11", 2 ]
 				}
 
 			}
@@ -3776,6 +3822,13 @@
 					"destination" : [ "obj-87", 0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -4252,6 +4305,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
@@ -4315,13 +4375,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-87", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-309" : [ "jawForward", "jawForward", 0 ],
 			"obj-311" : [ "jawOpen", "jawOpen", 0 ],
 			"obj-313" : [ "mouthClose", "mouthClose", 0 ],

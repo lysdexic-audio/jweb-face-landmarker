@@ -1,6 +1,6 @@
 # jweb-face-landmarker
 
-A self contained example demonstrating how to use MediaPipe FaceLandmarker with Max's `jweb`
+A self contained example demonstrating how to use MediaPipe FaceLandmarker with Max's `jweb` connected to either a live webcamera stream or using still images.
 
 ![Max patcher example of jweb-face-landmarker](./jweb-face-landmarker.gif)
 
@@ -34,7 +34,9 @@ MediaPipe FaceLandmarker provides 52 features (blendshapes) per face, which are 
 | Mouth | mouthStretchLeft | mouthStretchRight | | |
 | Mouth | mouthUpperUpLeft | mouthUpperUpRight | | |
 
+## Notes
 
+Still images seem to work best when faces are not too far from the camera.
 
 ## Resources
 
